@@ -1,0 +1,90 @@
+一，生成repository
+      1,使用gerrit.yt账户登录到git服务器
+
+      2,生成一个空的repository
+        $ssh -p [ssh port] gerrit.yt@localhost gerrit create-project --name "repository path"
+        如:ssh -p 29427 gerrit.yt@localhost gerrit create-project --name "android/platform/packages/apps/PreloadedApp"
+        
+      3,在repository中生成branch
+        $cd /cm_storage/git_db/b_prj_osu/b_prj_osu/android/app/mydroid/packages/apps
+        
+        $git clone Overtempnoti.git
+        
+        $cd Overtempnoti
+        
+        $touch .gitignore
+        
+        $git add .gitignore
+        
+        $git commit -m "initial repository"
+        
+        $git push origin master
+   
+        $cd /cm_storage/git_db/vs700_gingerbread/vs700_gingerbread/android/packages/apps/test.git
+
+        $git branch cs600_master
+
+        $rm -rf test
+
+       4,编辑manifest
+         (1), $vi manifest/vs700_gingerbread/cs600_master/manifest/default.xml
+         (2), 在文件结尾加上路径，保存并退出
+         (3), $git add default.xml
+              $git commit -m "libwbxml for Chunhua.Liang"
+              $git push
+
+       5,获得新加的repository
+         (1), $cd /cm_storage/src/cs600/
+         (2), $repo sync
+
+二,删除repository 
+
+       1,启动mysql
+         $mysql -u gerrit.yt -p
+         
+       2,显示数据库资源
+         mysql> show databases;
+
+       3,选择要使用的数据库
+         mysql> use reviewdb_ms910_froyo;
+
+       4,显示数据库中的各table
+         mysql> show tables;
+
+       5,列出project目录
+         mysql> select name from projects;
+
+       6,删除指定的repository
+         mysql> delete from projects where name='ms910_froyo/android/packages/apps/test.git';
+
+       7,提交
+         mysql> commit;
+
+三，向mysql插入一个repository
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/device/lge/cx2');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/device/lge/security');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/external/harfbuzz');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/external/lgime_kr');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/vendor/lge/apps/LGSetupWizardNotiForGB');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/vendor/lge/apps/NfcHandover');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/vendor/lge/apps/NfcTagPlus');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/vendor/lge/apps/TDMB');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','android/platform/vendor/lge/apps/Tag');
+
+INSERT INTO projects VALUES ('no comment','N','N','M','NULL','N','N','modem_cx2');
+
+
+
+
+
+
+

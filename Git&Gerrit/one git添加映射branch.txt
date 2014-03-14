@@ -1,0 +1,21 @@
+1.
+/cm_storge/git_db/lap_yt/
+git branch mt6575_jb_release_cn mt6575_jb_release
+2.
+~/manifest/lap_yt/[v5/mt6575_jb_release_cn/]
+git clone /cm_storage/git_db/lap_yt/platform/manifest.git
+git branch mt6575_jb_release_cn remotes/origin/mt6575_jb_release_cn
+git checkout mt6575_jb_release_cn
+
+vi default.xml
+---------------------------------------------------------------
+  <remote  name="lap"
+           fetch=".."
+           review="http://172.28.141.63:8145/lap_yt" />
+
+
+  <default revision="mt6575_jb_release_cn"
+           remote="lap" />
+---------------------------------------------------------------
+
+

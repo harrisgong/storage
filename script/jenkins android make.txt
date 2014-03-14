@@ -1,0 +1,15 @@
+echo "########## android build ##########"
+
+rm -rf ./release
+cd android
+source build/envsetup.sh
+choosecombo 1 $G_ANDROID 3
+make -j24 2>&1 | tee android.log
+
+androidBuildResualt=${PIPESTATUS[0]}
+if [ "${androidBuildResualt}" != "0" ]
+then 
+    echo "android build error !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+fi
+
+exit ${androidBuildResualt}

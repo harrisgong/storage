@@ -1,0 +1,670 @@
+
+*{
+}
+/*整体框架设计*/
+body{
+ width:100%;
+ color:red;
+ margin:0px auto;
+ padding:0px;
+}
+/*顶端设计---->*/
+/*顶端框架设计*/
+.top{
+ height:70px;
+ background-image:url("image/header-bg.jpg");
+ background-size:cover;
+}
+/*顶端框架设计-居中*/
+.top_midlle{
+ margin:0 auto;
+ width:1000px;
+ height:70px;
+ color:#4C0503;
+}
+/*顶端-logo布局设计*/
+.logo{
+ 
+}
+/*顶端-logo图片设计*/
+.logo img{
+ width:180px;
+ height:68px;
+ float:left;
+}
+/*顶端-电话布局设计*/
+.moblie{
+ width:200px;
+ margin-top:5px;
+ float:right;
+}
+/*顶端-电话图片设计*/
+.moblie img{
+ float:left;
+}
+/*顶端-电话号码设计*/
+.moblie span{
+ margin-top:25px;
+ margin-left:20px;
+ float:left;
+}
+/*顶端-email布局设计*/
+.email{
+ width:200px;
+ height:65px;
+ margin-top:5px;
+ float:right;
+}
+/*顶端-email图片设计*/
+.email img{
+float:left;
+}
+/*顶端-email内容设计*/
+.email span{
+ margin-top:25px;
+ float:left;
+ margin-left:20px;
+}
+.email_name a{
+ list-style-type:none; 
+}
+.email_name  a:link{
+ color:#4C0503;
+ text-decoration:none;
+}
+/*标题内容-超链接-访问后设计*/
+.email_name  a:visited{
+ color:#4C0503;
+ text-decoration:none;
+}
+/*标题内容-超链接-访问中设计*/
+.email_name  a:hover{
+ color:#4C0503;
+}
+/*<----顶端设计*/
+
+/*标题设计------->*/
+/*标题框架设计*/
+.title{
+ margin:0 auto;
+ width:1080px;
+ height:35px;
+ margin-top:0px;
+
+}
+.title ul{
+ margin:0px;
+}
+/*标题内容设计*/
+.title li{
+ width:140px;
+ height:27px;
+ padding-top:8px;
+ text-align:center;
+ font-size:14px;
+ font-weight:bold;
+ color:white;
+ list-style-type:none;
+ background-color:#0099C5;
+ float:left;
+ border:1px solid white;
+ text-decoration:none;
+}
+/*标题内容-超链接-访问前设计*/
+.title li a:link{
+ color:white;
+ text-decoration:none;
+}
+/*标题内容-超链接-访问后设计*/
+.title li a:visited{
+ color:white;
+ text-decoration:none;
+}
+/*标题内容-超链接-访问中设计*/
+.title li a:hover{
+ color:white;
+}
+/*标题内容--访问中框架设计*/
+.title li:hover{
+ color:white;
+ background-color:#00A2C6;
+}
+/*标题内容-导航下拉列表设计*/
+.title  li ul { 
+ list-style-type:none;
+ margin-top:12px;
+ margin-left:-40px;
+ width:320px; 
+ position: absolute; 
+ left: -999em;
+}
+/*标题内容-导航下拉列表内容设计*/
+.title  li li { 
+ font-size:10px;
+ text-align:center; 
+ width:250px; 
+} 
+/*标题内容-导航下拉列表显示设计*/
+.title li:hover ul{
+ left:auto; /*控制下拉列表显示*/
+}
+/*<------标题设计*/
+
+/*展示图片设计------->*/
+/*展示图片框架设计*/
+.show{
+ margin:0 auto;
+ width:1000px;
+ height:400px;
+
+}
+/*展示图片-图片设置设计*/
+.show_image{
+ width:940px;
+ height:400px;
+ overflow:hidden;
+}
+/*展示图片-图片对应内容设置设计*/
+.show_image_num{
+ position:absolute;
+ right:210px;
+ bottom:220px;
+}
+/*展示图片-数字显示设计*/
+.show_image_num li{
+ background:#fff;
+ float:left;
+ display:block;
+ width:15px;
+ height:15px;
+ line-height:15px;
+ border:1px solid #cecece;
+ font-family:Arial,Helvetica,sans-serif;
+ text-align:center;
+ padding:2px;
+ margin:0px;
+} 
+/*展示图片-数字高亮显示设计*/
+.show_image_num li.high{
+ background:#000;
+ color:#fff;
+ font-weight:bolder;
+}
+/*<------展示图片设计*/
+
+/*产品展示设计------->*/
+/*产品展示框架设计*/
+.prdoucts{
+ margin:0 auto;
+ width:1000px;
+ height:250px;
+ position:relative;
+ border:1px solid #DDDDDD;
+}
+/*产品展示-标题框架设计*/
+.products_name{
+ color:#642526;
+ text-align:center;
+ width:150px;
+ font-variant:small-caps;/*所有字体大写*/
+ font-size:25px;
+ font-weight:bold;
+}
+/*产品展示-向左设计*/
+#previous{
+ position: relative;
+ left:-10px;
+ top:80px;
+}
+/*产品展示-显示框架设计*/
+#product{
+ margin-top:-15px;
+ margin-left:-15px;
+ width:960px;
+ height:220px;
+ overflow:hidden;
+ position:absolute;
+ left:30px;
+ top:45px;
+ float:left;
+}
+/*产品展示-每个图片空间设计*/
+#product div{
+ padding-left:20px;
+ width:190px;
+ height:220px;
+ position:absolute;
+ left:1000px;
+}
+/*产品展示-每个图片设计*/
+#product img{
+ width:190px;
+ height:220px;
+}
+/*产品展示-向右设计*/
+#next{
+ position: absolute;
+ right:-10px;
+ top:110px;
+}
+/*<------产品展示设计*/
+
+/*文字显示设计------->*/
+.font-show{
+ margin:0 auto;
+ width:1000px;
+ margin-top:35px;
+ text-align:center;
+ color:#4C0503;
+ font-weight:bold;
+}
+/*<------文字显示设计*/
+
+/*图片滚动设计------->*/
+.marquee_logs{
+ margin:0 auto;
+ width:1000px;
+}
+/*<------图片滚动设计*/
+
+/*服务设计------->*/
+/*服务-框架设计*/
+.services{
+ margin:0 auto;
+ width:1000px;
+ height:350px;
+}
+/*服务-布局设计*/
+.service{
+ width:196px;
+ height:348px;
+ border:1px solid #E3E3E3;
+ float:left;
+}
+/*服务-超链接设计*/
+.service a:link{
+ color:white;
+ text-decoration:none;
+}
+.service a:visited{
+ color:white;
+ text-decoration:none;
+}
+.service a:hover{
+ color:white;
+ text-decoration:none;
+}
+/*服务-名字显示设计*/
+.service_name{
+ text-align:center;
+ margin:15px;
+ font-size:15px;
+ color:#B51644;
+ float:left;
+}
+/*服务-图片显示设计*/
+.service_img{
+ margin-left:5px;
+ width:180px;
+ height:220px;
+ float:left;
+}
+/*服务-图片透明图片显示设计*/
+.service_img_clarity{
+ width:180px;
+ height:220px;
+ opacity: 0.5;/*设置模块透明度*//*GOOGLE浏览器支持*/
+ filter:alpha(opacity=50);/*ie浏览器支持*/
+ margin-top:-220px;
+ margin-left:5px;
+ background-color:#c0c0c0;
+ float:left;
+}
+/*服务-图片透明图片鼠标效果显示设计*/
+.service_img_clarity:hover{
+ width:180px;
+ height:220px;
+ opacity: 0;/*GOOGLE浏览器支持*/
+ filter:alpha(opacity=0);/*ie浏览器支持*/
+ margin-top:-220px;
+ margin-left:5px;
+ background-color:#c0c0c0;
+ float:left;
+}
+/*服务-信息设计*/
+.service_info{
+ margin:0px;
+ width:100%;
+ height:32px;
+ text-align:center;
+ padding-top:0px;
+ color:white;
+ font-variant:small-caps;/*所有字体大写*/
+ font-size:25px;
+ background-color:#4C0503;
+ float:left;
+}
+/*服务-联系设计*/
+.service_contact{
+ width:90px;
+ height:25px;
+ text-align:center;
+ padding-top:10px;
+ color:white;
+ font-variant:small-caps;/*所有字体大写*/
+ font-size:15px;
+ background-color:#B9B7B8;
+ border:2px solid white;
+ float:left;
+}
+/*服务-引用框架设计*/
+.service_quote{
+ width:97px;
+ height:25px;
+ text-align:center;
+ padding-top:10px;
+ color:white;
+ font-variant:small-caps;/*所有字体大写*/
+ font-size:15px;
+ background-color:#016684;
+ border:2px solid white;
+ float:left;
+}
+/*<------服务设计*/
+/*底端设置------->*/
+/*底端框架设计*/
+.foot{
+ margin-top:10px;
+ height:100px;
+ background-color:#DFDCD7;
+}
+/*底端框架-布局设计*/
+.footer{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+/*底端框架-内容设计*/
+.footer li{
+ margin:0;
+ padding:0;
+ text-align:center;
+ font-size:14px;
+ color:black;
+ list-style-type:none;
+ float:left;
+ text-decoration:none;
+}
+/*底端框架-内容超链接设计*/
+.footer li a:link{
+ color:#4C0503;
+ text-decoration:none;
+}
+/*底端框架-标题设计*/
+.footer_title{
+ margin:0;
+ padding:0;
+ float:left;
+}
+/*底端框架-内部地图设计*/
+.footer_map{
+ margin:0;
+ float:right;
+}
+/*底端框架-地图超链接设计*/
+.footer_map a{
+margin-top:5px;
+float:left;
+}
+/*底端框架-地图-图片设计*/
+.footer_map img{
+float:left;
+}
+/*标题内容-超链接-访问后设计*/
+.footer li a:visited{
+ color:#4C0503;
+ text-decoration:none;
+}
+/*标题内容-超链接-访问中设计*/
+.footer li a:hover{
+ color:#4C0503;
+}
+/*版权设置*/
+.copyright{
+ margin-top:20px;
+ font-size:14px;
+ color:#4C0503;
+ float:left;
+}
+/*<------底端设置*/
+
+/*company-profile页面设置------->*/
+.company-profile{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.company-profile span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.company-profile div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------company-profile页面设置*/
+
+/*why-lnv页面设置------->*/
+.why-lnv{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.why-lnv span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.why-lnv div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------why-lnv页面设置*/
+
+/*partners页面设置------->*/
+.partners{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.partners span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.partners div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------partners页面设置*/
+
+/*prouducts_context页面设置------->*/
+.prouducts_context{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.prouducts_context span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.prouducts_context div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------prouducts_context页面设置*/
+
+/*services_context页面设置------->*/
+.services_context{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.services_context span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.services_context div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------services_context页面设置*/
+
+/*track-shipment页面设置------->*/
+.track-shipment{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.track-shipment span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.track-shipment div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------track-shipmente页面设置*/
+
+/*contact页面设置------->*/
+.contact{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.contact span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.contact div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------contact页面设置*/
+
+/*rma页面设置------->*/
+.rma{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.rma span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.rma div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------rma页面设置*/
+
+/*request-quote页面设置------->*/
+.credit-app{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.credit-app span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.credit-app div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+
+/*<-------credit-app页面设置*/
+
+/*request-quote页面设置------->*/
+.request-quote{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.request-quote span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.request-quote div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------request-quote页面设置*/
+
+
+/*sitemap页面设置------->*/
+.sitemap{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.sitemap span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.sitemap div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------sitemap页面设置*/
+
+
+/*terms页面设置------->*/
+.terms{
+ margin:0 auto;
+ width:1000px;
+ padding-top:10px;;
+}
+.terms span{
+ font-size:20px;
+ font-weight:bold;
+ color:#4C0503;
+}
+.terms div{
+ padding-top:20px;
+ font-size:14px;
+ color:black;
+ padding-bottom:20px;
+}
+/*<-------terms页面设置*/

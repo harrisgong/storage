@@ -1,0 +1,67 @@
+1. vi ./branch.sh
+    witch new branch name
+2. find . -name '*.git' -exec ./branch.sh {} \;
+    create new branch
+3. git branch your_brnach_name  original_branch
+    add manifest
+
+
+gerrit.yt@lgmcgit-yt: ~/manifest/lap_yt/u2/omap_ics_release_cn/manifest $
+下执行命令3，参数需一致，然后修改default.xml并push.
+
+
+
+
+1999  cd /cm_storage/
+ 2000  cd git_db/lap_yt
+ 2001  ls
+ 2002  vi branch.sh
+ 2003  cd /home/
+ 2004  c d ~
+ 2005  cd ~
+ 2006  cd manifest/lap_yt/u2/omap_ics_release_cn/manifest/git branch
+ 2007  cd ..
+ 2008  cd -
+ 2009  cd manifest/lap_yt/u2/omap_ics_release_cn/manifest/
+ 2010  git branch
+ 2011  git branch -a | grep omap
+ 2012  ll
+ 2013  vi default.xml
+ 2014  git status
+ 2015  history
+
+
+ 
+ <manifest>
+
+  <remote  name="lap"
+           review="http://172.28.141.63:8145/lap_yt"
+           fetch=".." />
+  <default revision="omap_ics_release_cis"
+           remote="lap"
+           sync-j="2" />
+
+  <project path="android/build" name="platform/build">
+ 
+ 
+ 
+		
+~/manifest/lap_yt/g_project/apq8064_ics_release_cn/manifest　这个目录下我建了g_project的目录，但执行git branch your_brnach_name  original_branch有错误，当时你建U2的目录时，manifest目录下的.git是怎么生成的？
+明杰[???] 14:52:06
+。。。。
+这个是clone 的
+树伟 14:52:28
+求命令
+明杰[???] 14:53:27
+ii. Clone manifest.git
+$ git clone /cm_storage/git_db/project_name/project_name/manifest.git
+ $ Modify default.xml  
+$ git add, commit, push
+
+LGMC_GIT_SCM_Administration_Eng_v2.doc
+这个文档里面
+在apq8064_ics_release_cn 目录下执行
+树伟 14:55:19
+/cm_storage/git_db/ 下面没有project的目录呀。
+明杰[???] 14:55:38
+lap_yt/platform
